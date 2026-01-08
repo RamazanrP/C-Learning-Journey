@@ -18,10 +18,10 @@ for(i=0;i<N-1;i++){
     }
 }
 i=0;
-while(dizi[i] >= i+1){
+while(dizi[i] >= i+1){ //Büyükten küçüğe sıralandığı için sıradaki sayı, sırasından büyükse kendisinden sonrakilerden de büyüktür
     i++;
 }
-printf("%d", i);
+printf("%d", i); //Kırılmadan hemen önceki counter yani i lazım bize. dizi[i] değil. Tekrarlılarda hataya düşerdik!
 return 0;
 
 }
